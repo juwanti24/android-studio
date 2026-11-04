@@ -44,29 +44,7 @@ class MoreFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
         (requireActivity() as AppCompatActivity).supportActionBar?.title = "halaman more"
-//        val adapter = ArrayAdapter(
-//            requireContext(),
-//            android.R.layout.simple_list_item_1,
-//            dataList
-//        )
-//// Hubungkan listViewItems dengan adapter
-//        binding.listViewItems.adapter = adapter
-//// Aksi saat item diklik
-//        binding.listViewItems.setOnItemClickListener { _, _, position, _ ->
-//            val selectedItem = dataList[position]
-//            Toast.makeText(
-//                requireContext(), "Kamu memilih: $selectedItem",
-//                Toast.LENGTH_SHORT
-//            ).show()
-//        }
-        val adapter = SimpleAdapter(
-            requireContext(),
-            dataListWithDesc,
-            android.R.layout.simple_list_item_2,
-            arrayOf("title", "desc"), // key yang diambil dari data
-            intArrayOf(android.R.id.text1, android.R.id.text2) // tempat tampilnya
-        )
-        binding.listViewItems.adapter = adapter
+
         binding.listViewItems.setOnItemClickListener { _, _, position, _ ->
             val selectedItem = dataListWithDesc[position]
             val title = selectedItem["title"]
