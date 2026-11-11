@@ -17,16 +17,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <!-- komponen Tahap 1 sampai 4 ditambahkan di sini -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
         android:background="#87DEDA"
-        app:titleTextColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <!-- komponen Tahap 1 sampai 4 ditambahkan di sini -->
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white" />
+
     <EditText
         android:id="@+id/etPhone"
         android:layout_width="0dp"

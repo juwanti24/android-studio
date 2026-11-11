@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.juwan_3tic.Home.Pertemuan5.LimaActivity
 import com.example.juwan_3tic.Home.Pertemuan9.NinthActivity
+import com.example.juwan_3tic.Home.Pertemuan_11.EleventhActivity
 import com.example.juwan_3tic.LoginActivity
 import com.example.juwan_3tic.R
 import com.example.juwan_3tic.databinding.FragmentHomeBinding
@@ -81,11 +82,15 @@ class HomeFragment : Fragment() {
 
             val intent= Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
-
-
         }
+
+        binding.btneleven.setOnClickListener {
+
+            val intent= Intent(requireContext(), EleventhActivity::class.java)
+            startActivity(intent)
+
         super.onViewCreated(view, savedInstanceState)
     }
 
 
-    }
+    }}
