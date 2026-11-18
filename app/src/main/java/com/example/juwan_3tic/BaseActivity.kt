@@ -11,6 +11,7 @@ import com.example.juwan_3tic.Home.HomeFragment
 import com.example.juwan_3tic.Message.MessageFragment
 import com.example.juwan_3tic.More.MoreFragment
 import com.example.juwan_3tic.databinding.ActivityBaseBinding
+import com.example.my_apps.Note.FragmentNote
 import kotlin.text.replace
 
 class BaseActivity : AppCompatActivity() {

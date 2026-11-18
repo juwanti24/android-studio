@@ -1,5 +1,6 @@
 package com.example.juwan_3tic.Data.Entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -9,5 +10,7 @@ data class NoteEntity(
     val id: Int = 0,
     val title: String,
     val content: String,
-    val createdAt: Long = System.currentTimeMillis()
+    val createdAt: Long = System.currentTimeMillis(),
+    @ColumnInfo(defaultValue = "0")
+    val isPinned: Boolean = false
 )
