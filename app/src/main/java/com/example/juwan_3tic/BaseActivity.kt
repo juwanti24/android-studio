@@ -42,6 +42,10 @@ class BaseActivity : AppCompatActivity() {
                     replaceFragment(MoreFragment())
                     true
                 }
+                R.id.note -> {
+                    replaceFragment(FragmentNote())
+                    true
+                }
                 else -> false
             }
 
