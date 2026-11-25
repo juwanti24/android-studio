@@ -11,10 +11,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.juwan_3tic.Data.AppDatabase
 import com.example.juwan_3tic.Data.Entity.NoteEntity
+import com.example.juwan_3tic.Note.NoteAdapter
 import com.example.juwan_3tic.databinding.FragmentNoteBinding
-import com.example.my_apps.Data.AppDatabase
-import com.example.my_apps.data.entity.NoteEntity
-import com.example.my_apps.databinding.FragmentNoteBinding
+
 import kotlinx.coroutines.launch
 
 class FragmentNote : Fragment() {
@@ -41,6 +40,7 @@ class FragmentNote : Fragment() {
 
         binding.rvNotes.layoutManager = LinearLayoutManager(requireContext())
         binding.rvNotes.adapter = adapter
+        fetchNotes()
         binding.rvNotes.addItemDecoration(
             DividerItemDecoration(
                 requireContext(), DividerItemDecoration.VERTICAL
