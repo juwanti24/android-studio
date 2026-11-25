@@ -1,4 +1,4 @@
-package com.example.juwan_3tic.Pertemuan5
+package com.example.juwan_3tic.Home.Pertemuan5
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,10 +9,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.juwan_3tic.MainActivity
 import com.example.juwan_3tic.R
 import com.example.juwan_3tic.databinding.ActivityLimaBinding
-import com.example.juwan_3tic.databinding.ActivityLoginBinding
 
 class LimaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLimaBinding

@@ -12,6 +12,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.juwan_3tic.Home.HomeFragment
 import com.example.juwan_3tic.databinding.ActivityLoginBinding
 import kotlin.math.log
 
@@ -37,10 +38,11 @@ class LoginActivity : AppCompatActivity() {
             val user = binding.editusername.text.toString()
             val pass = binding.editpw.text.toString()
 
-            val intent= Intent(this@LoginActivity, MainActivity::class.java)
+            val intent= Intent(this@LoginActivity, HomeFragment::class.java)
             intent.putExtra("nama","Alamak")
             intent.putExtra("Umur",25)
-            startActivity(intent)
+            startActivity(Intent(this@LoginActivity, BaseActivity::class.java))
+            finish()
 
             Log.d("Username",user)
             Log.d("password",pass)
