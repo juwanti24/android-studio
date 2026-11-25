@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Login bukan launcher lagi -->
+        <!-- Login bukan launcher lagi R00tpswd!!! -->
         <activity
             android:name=".LoginActivity"
             android:exported="false"
@@ -56,6 +56,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.example.my_apps.Note.NoteFormActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Catatan.CatatanFormActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

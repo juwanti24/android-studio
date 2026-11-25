@@ -24,11 +24,22 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp" />
     </LinearLayout>
+
     <ImageView
         android:id="@+id/btnDelete"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:contentDescription="Hapus catatan"
         android:padding="12dp"
         android:src="@drawable/ic_delete"
-        android:contentDescription="Hapus catatan" />
+         />
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="edit catatan"
+        android:padding="12dp"
+        android:src="@drawable/ic_edit"
+        />
 </LinearLayout>
