@@ -38,15 +38,16 @@ class LoginActivity : AppCompatActivity() {
             val user = binding.editusername.text.toString()
             val pass = binding.editpw.text.toString()
 
-            val intent= Intent(this@LoginActivity, HomeFragment::class.java)
-            intent.putExtra("nama","Alamak")
-            intent.putExtra("Umur",25)
-            startActivity(Intent(this@LoginActivity, BaseActivity::class.java))
-            finish()
-
-            Log.d("Username",user)
-            Log.d("password",pass)
+            Log.d("Username", user)
+            Log.d("password", pass)
             Toast.makeText(this, "username: $user Password: $pass", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this@LoginActivity, BaseActivity::class.java).apply {
+                putExtra("nama", "Alamak")
+                putExtra("umur", 25)
+            }
+            startActivity(intent)
+            finish()
         }
 
 

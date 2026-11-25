@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.juwan_3tic.Home.Pertemuan5.LimaActivity
+import com.example.juwan_3tic.Home.Pertemuan9.NinthActivity
 import com.example.juwan_3tic.LoginActivity
 import com.example.juwan_3tic.R
 import com.example.juwan_3tic.databinding.FragmentHomeBinding
@@ -43,7 +44,7 @@ class HomeFragment : Fragment() {
 
         binding.btnSnackBar.setOnClickListener {
             Snackbar.make(binding.root, "Ini adalah Snackbar", Snackbar.LENGTH_SHORT)
-                .setAction("Tampilan"){
+                .setAction("batal"){
                     val intent= Intent(requireContext(), LoginActivity::class.java)
                     startActivity(intent)
                     Log.e("Info Snackbar","Snackbar ditutup")
@@ -72,6 +73,13 @@ class HomeFragment : Fragment() {
         binding.btnLima.setOnClickListener {
 
             val intent= Intent(requireContext(), LimaActivity::class.java)
+            startActivity(intent)
+
+
+        }
+        binding.btntonine.setOnClickListener {
+
+            val intent= Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
 
 
